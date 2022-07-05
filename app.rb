@@ -15,5 +15,6 @@ get '/otherpage' do
 end
 
 get '/cat' do
+  @name = ["Amigo", "Misty", "Almond", "Bruce"].sample
   erb(:index)
 end
