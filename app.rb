@@ -14,7 +14,13 @@ get '/otherpage' do
   'this is another page you can see'
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = ["Amigo", "Misty", "Almond", "Bruce"].sample
   erb(:index)
+end
+
+get '/named-cat' do
+  p params
+  @name = params[:name]
+  erb :index
 end
