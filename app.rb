@@ -11,7 +11,7 @@ get '/secret' do
 end
 
 get '/otherpage' do
-  'this is another page'
+  'this is another page you can see'
 end
 
 get '/cat' do
