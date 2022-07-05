@@ -15,5 +15,5 @@ get '/otherpage' do
 end
 
 get '/cat' do
-"<div style='border: 10px dashed red'><img src='http://placekitten.com/500/500'></div>"
+  erb(:index)
 end
